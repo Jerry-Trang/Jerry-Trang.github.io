@@ -51,11 +51,41 @@
       top: 0;
       left: 50px;
     }
+    .scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+}
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
   </style>
 </head>
 <body>
   <h1>Trang Trường Giang Love Đỗ Trần Khánh Ly</h1>
-  <div class="heart"></div>
+  <div class="scale-in-center">
+    <div class="heart "></div>
+  </div>
   <p>You are the most amazing person in my life. My love for you is like a never-ending flame that grows stronger every day. You fill my heart with joy and happiness, and I am grateful for every moment we spend together. You are my everything, and I can't imagine my life without you. Love you endlessly!</p>
 </body>
 </html>
