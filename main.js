@@ -115,7 +115,11 @@ const updateRate = async () => {
   const currencySecond = document.getElementById("currency-second").value;
   const currencyThird = document.getElementById("currency-third").value;
   const worthFirst = document.getElementById("worth-first").value;
-  
+  if(currencyFirst === currencySecond || currencySecond === currencyThird || currencyFirst === currencyThird){
+    alert("Please select different currencies for conversion.")
+    location.reload();
+  }
+
   fetch(`https://v6.exchangerate-api.com/v6/0138fe8ac24b514c7951e94a/latest/${currencyFirst}`)
     .then((response) => response.json())
     .then((data) => {
