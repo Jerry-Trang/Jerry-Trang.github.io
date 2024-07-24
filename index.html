@@ -1,91 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Love Message</title>
-  <style>
-    body {
-      background-color: #f8f8f8;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-    }
-    
-    h1 {
-      color: #e74c3c;
-      font-size: 40px;
-      margin-top: 0;
-      margin-bottom: 50px;
-    }
-    
-    p {
-      color: #333;
-      font-size: 24px;
-      line-height: 1.5;
-    }
-    
-    .heart {
-      width: 100px;
-      height: 100px;
-      background-color: #e74c3c;
-      position: relative;
-      margin: 0 auto;
-      transform: rotate(-45deg);
-    }
-    
-    .heart:before,
-    .heart:after {
-      content: "";
-      width: 100px;
-      height: 100px;
-      background-color: #e74c3c;
-      border-radius: 50%;
-      position: absolute;
-    }
-    
-    .heart:before {
-      top: -50px;
-      left: 0;
-    }
-    
-    .heart:after {
-      top: 0;
-      left: 50px;
-    }
-    .scale-in-center {
-	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
-	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
-}
-@-webkit-keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-@keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 </head>
+
 <body>
-  <h1>Trang Trường Giang Love Đỗ Trần Khánh Ly</h1>
-  
-    <div class="heart scale-in-center"></div>
-  
-  <p>You are the most amazing person in my life. My love for you is like a never-ending flame that grows stronger every day. You fill my heart with joy and happiness, and I am grateful for every moment we spend together. You are my everything, and I can't imagine my life without you. Love you endlessly!</p>
+    <div id="container" class="container">
+    </div>
+    <script src="main.js"></script>
+    
 </body>
+
 </html>
