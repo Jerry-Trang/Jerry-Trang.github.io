@@ -12,12 +12,13 @@ body{
     padding: 0;
 }
 
-.container{
+#container{
     background-color: rgb(206, 227, 229);
     color: cornflowerblue;
     padding: 10px;
     border-radius: 20px;
     text-align: center;
+    overflow-x: hidden;
 }
 
 
@@ -78,6 +79,27 @@ select {
   span.flag-icon{
     font-size: 60px;
   }
-
+@media screen and (max-width: 700px) {
+ input{
+    font-size: 15px!important;
+  }
+  .currency-container select{
+    overflow: scroll!important;
+    padding: 2px;
+  }
+  select{
+    font-size: 13px;
+    padding: 5px;
+    text-align: center;
+  }
+  select option {
+    padding: 5px;
+    font-size: 5px;
+  }
+  span.flag-icon{
+    font-size: 30px;
+  }
+  
+}
 
   
