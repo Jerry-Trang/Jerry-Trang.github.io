@@ -88,13 +88,13 @@ select {
     padding: 2px;
   }
   select{
-    font-size: 13px;
+    font-size: 10px;
     padding: 5px;
     text-align: center;
   }
   select option {
     padding: 5px;
-    font-size: 5px;
+    font-size: 10px;
   }
   span.flag-icon{
     font-size: 30px;
