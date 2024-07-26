@@ -1,5 +1,4 @@
 const container = document.getElementById("container");
-
 // Create and append h1 element
 const h1 = document.createElement("h1");
 h1.textContent = "Currency Converter";
@@ -53,7 +52,6 @@ const optionsFirst = [
   { value: "USD", text: "USD", flag: "us", selected: true }
 ];
 createCurrencyContainer("first", "currency-first", "worth-first", "flag-first", optionsFirst, false);
-
 
 // Create second currency container
 const optionsSecond = [
@@ -119,7 +117,6 @@ const updateRate = async () => {
     alert("Please select different currencies for conversion.")
     location.reload();
   }
-
   fetch(`https://v6.exchangerate-api.com/v6/0138fe8ac24b514c7951e94a/latest/${currencyFirst}`)
     .then((response) => response.json())
     .then((data) => {
@@ -132,15 +129,10 @@ const updateRate = async () => {
       document.getElementById("exchange-rate3").textContent = `${worthFirst} ${currencyFirst} = ${(worthFirst * rate3).toFixed(6)} ${currencyThird}`;
     
     })
-
-    
-
-
     .catch((error) => {
       console.error(error);
     });
 };
-
 // Event listeners
 document.getElementById("currency-first").addEventListener("change", updateFlagIcons);
 document.getElementById("currency-second").addEventListener("change", updateFlagIcons);
